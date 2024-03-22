@@ -48,13 +48,13 @@ namespace UIElement
 
                 Console.SetCursorPosition(positionY, positionX);
                 Console.Write(leftFrame);
-                bar = Cycle(currentValue, fillSymbol, bar);
-                bar = Cycle(difference, emptySymbol, bar);
+                bar = FillLien(currentValue, fillSymbol, bar);
+                bar = FillLien(difference, emptySymbol, bar);
                 Console.Write(bar + rightFrame);
             }
         }
 
-        static string Cycle(int lenghtBar, char fillSymbol, string bar)
+        static string FillLien(int lenghtBar, char fillSymbol, string bar)
         {
             for (int i = 0; i < lenghtBar; i++)
             {
